@@ -1,0 +1,38 @@
+Função de seta (() => {}):
+
+A sintaxe () => {} é a sintaxe de função de seta em JavaScript.
+As funções de seta não têm seu próprio this. Elas herdam o this do escopo no qual foram definidas. 
+Isso é muitas vezes útil em React, pois evita problemas relacionados ao this em métodos de classe ou callbacks.
+As funções de seta são convenientes quando você precisa de uma função curta, como em callbacks ou expressões de função.
+
+Exemplo:
+
+const MeuComponente = () => {
+  return <div>Função de seta</div>;
+};
+
+Bloco de código ({}):
+
+Quando você usa {}, você está criando um bloco de código que contém uma ou mais instruções JavaScript.
+Se você estiver escrevendo uma função que precisa de várias linhas de código ou execução condicional, você usará {} 
+para definir o bloco da função.
+Dentro de um bloco de código, você pode ter várias instruções e usar a palavra-chave return para retornar valores.
+
+Exemplo:
+
+
+const MeuComponente = () => {
+  // Bloco de código
+  const condicao = true;
+
+  if (condicao) {
+    return <div>Condição é verdadeira</div>;
+  } else {
+    return <div>Condição é falsa</div>;
+  }
+};
+
+Em resumo, () => {} é usado para funções de seta, que são úteis em 
+situações onde a herança de this é desejável e para funções curtas. Por outro lado, {} é usado para criar blocos 
+de código que podem conter várias instruções, como em funções mais longas ou com lógica condicional mais complexa. 
+Ambas as formas são válidas e são usadas dependendo do contexto e das necessidades do código.
